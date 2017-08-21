@@ -1,0 +1,393 @@
+html {
+  font-size: 18px;
+}
+body {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-family: helvetica;
+}
+
+.container {
+
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#headerBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logoContainer {
+  width: 960px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#logo {
+  height: 1.5rem;
+  width: auto;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+#companyName {
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#bannerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#bannerImage {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/moto.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: bottom;
+}
+
+#bannerBox {
+  width: 960px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#bantextBox {
+  background-color: black;
+  width: 28rem;
+  height: 10rem;
+  margin-top: 9rem;
+}
+
+#bantextBox h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 3rem;
+  padding-top: 2rem;
+}
+
+#bantextBox h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 0.25rem;
+  padding-left: 3rem;
+}
+
+
+.navContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: firebrick;
+}
+
+#navBox {
+  display: flex;
+  width: 960px;
+}
+
+nav {
+  width: inherit;
+  display: flex;
+}
+
+ul {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  display: inline-flex;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+#navTablet {
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#menu a {
+  display: inline-block;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+
+}
+
+#productSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#productArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  color: black;
+}
+
+.productbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px black;
+  width: 30%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.box {
+  display: inline-block;
+  width: 100%;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13rem;
+}
+
+.productImage {
+  width: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.textBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.textBox p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#cardContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+}
+
+#infoSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:inherit;
+  background-color: white;
+}
+
+#infoBox {
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: white;
+  color: white;
+  width: 960px;
+}
+
+#hourBox {
+  display: inline-block;
+}
+
+#locationBox {
+  display: inline-block;
+}
+
+.containerInput {
+  background-color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  color: white;
+}
+
+.containerInfo {
+  width: 35%;
+  color: black;
+  margin-bottom: 4rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  background-color: black;
+  color: white;
+  text-align: left;
+  align-items: center;
+}
+
+#footerBox {
+  display: flex;
+  justify-content: flex-start;
+  width: 960px;
+}
+
+@media only screen and (max-width: 1024px)
+{
+  nav ul li {
+    display: none;
+  }
+  #navTablet {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #thermalBox {
+    display: none;
+  }
+  .productbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+    width: 47%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 470px)
+{
+  #bannerImage {
+    height: 15rem;
+  }
+  #bannerBox {
+    width: 470px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  #bantextBox {
+    height: 5rem;
+    display: inline-block;
+    align-items: center;
+  }
+  #bantextBox h3{
+    font-family: helvetica;
+    font-size: 0.77rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+  #bantextBox h1{
+    font-family: helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 2rem;
+  }
+  #watchBox {
+    display: none;
+  }
+  #cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  .productbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+    width: 90%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  #infoSection {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:470px;
+    background-color: white;
+  }
+
+  #infoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+
+  #hourBox {
+    width: 90%;
+    display: block;
+    justify-content: center;
+  }
+
+  #locationBox {
+    width: 90%;
+    display:block;
+    justify-content: center;
+  }
+
+  .containerInput {
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    color: white;
+  }
+
+  .containerInfo {
+    color: black;
+    margin-bottom: 4rem;
+  }
+  #footerBox {
+    display: flex;
+    justify-content: center;
+    width: 960px;
+  }
+}
